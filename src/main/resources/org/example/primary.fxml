@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <Button fx:id="btn_tabelle" layoutX="719.0" layoutY="148.0" mnemonicParsing="false" onAction="#handle_btn_tabelle" prefHeight="25.0" prefWidth="163.0" text="in Tabelle hinzufügen" />
+      <TableView fx:id="table" layoutY="300.0" prefHeight="200.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="table_geraet" prefWidth="128.57" text="Übung/ Gerät" />
+            <TableColumn fx:id="table_kg" prefWidth="128.57" text="KG" />
+            <TableColumn fx:id="table_wdhl" prefWidth="128.57" text="Wdhl." />
+            <TableColumn fx:id="table_pause" prefWidth="128.57" text="Pause" />
+            <TableColumn fx:id="table_zeit" prefWidth="128.57" text="Zeit" />
+            <TableColumn fx:id="table_intensitaet" prefWidth="128.57" text="Intensität" />
+            <TableColumn fx:id="table_beschreibung" prefWidth="128.57" text="Beschreibung" />
+         </columns>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </TableView>
+      <TextField fx:id="eingabe_intensitaet" layoutX="568.0" layoutY="244.0" prefWidth="75.0" promptText="als Zahl" />
+      <TextField fx:id="einagbe_beschreibung" layoutX="651.0" layoutY="244.0" prefHeight="50.0" prefWidth="239.0" promptText="Beschreibung eingeben" />
+      <Text layoutX="735.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beschreibung" />
+      <Text layoutX="267.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KG" />
+      <Text layoutX="342.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wdhl." />
+      <Text layoutX="426.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pause" />
+      <Text layoutX="514.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zeit" />
+      <Text layoutX="582.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intensität" />
+      <TextField fx:id="eingabe_zeit" layoutX="486.0" layoutY="244.0" prefWidth="75.0" promptText="in Min." />
+      <TextField fx:id="eingabe_kg" layoutX="237.0" layoutY="244.0" prefWidth="75.0" promptText="als Zahl" />
+      <TextField fx:id="eingabe_wdhl" layoutX="320.0" layoutY="244.0" prefWidth="75.0" promptText="als Zahl" />
+      <TextField fx:id="eingabe_pause" layoutX="403.0" layoutY="244.0" prefWidth="75.0" promptText="in Sek." />
+      <ComboBox fx:id="auswahl_geraet" editable="true" layoutX="28.0" layoutY="244.0" prefWidth="200.0" promptText="Gerät auswählen" />
+      <Text layoutX="28.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Übung/ Gerät" />
+      <Text layoutX="28.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nachname des Kunden" />
+      <Text layoutX="28.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vorname des Kunden" />
+      <Text layoutX="28.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kundennummer" />
+      <TextField fx:id="eingabe_vorname" layoutX="171.0" layoutY="116.0" prefWidth="160.0" promptText="Vornamen eingben" />
+      <TextField fx:id="eingabe_nachname" layoutX="171.0" layoutY="148.0" prefWidth="160.0" promptText="Nachnamen eingeben" />
+      <TextField fx:id="eingabe_kundennummer" layoutX="171.0" layoutY="181.0" prefWidth="160.0" promptText="Kundennummer eingeben" />
+      <Button fx:id="btn_db" layoutX="719.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="in DB hinzufügen " />
+      <Text layoutX="28.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainingsplan">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_konvertieren" layoutX="721.0" layoutY="85.0" mnemonicParsing="false" onAction="#handle_btn_konvertieren" prefHeight="25.0" prefWidth="163.0" text="Trainingsplan konvertieren" />
+   </children>
+</AnchorPane>
